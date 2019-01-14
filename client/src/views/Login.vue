@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import firebase from 'firebase/app'
 export default {
   name: 'login',
   data () {
@@ -22,16 +21,7 @@ export default {
     loginApp () {
     },
     signUp () {
-      firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
-        (user) => {
-          console.log('User is logged in')
-          this.$router.replace('home')
-          this.email = ''
-          this.password = ''
-        }, err => {
-          console.log('Error on log in: ' + err.message)
-        }
-      )
+      console.log('Poppin')
     }
   }
 }

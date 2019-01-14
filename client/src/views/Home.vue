@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import firebase from 'firebase'
 export default {
   name: 'home',
   data () {
@@ -19,9 +18,7 @@ export default {
   },
   methods: {
     logout () {
-      firebase.auth().signOut().then(() => {
-        this.$router.replace('login')
-      })
+      console.log('Stuff')
     }
   }
 }

@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import firebase from 'firebase/app'
 export default {
   name: 'signup',
   data () {
@@ -20,16 +19,7 @@ export default {
   },
   methods: {
     signUp () {
-      firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
-        (user) => {
-          console.log('User is logged in')
-          this.$router.replace('home')
-          this.email = ''
-          this.password = ''
-        }, err => {
-          console.log('Error on sign up: ' + err.message)
-        }
-      )
+      console.log('Signing up!')
     }
   }
 }
