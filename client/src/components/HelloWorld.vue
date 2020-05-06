@@ -45,7 +45,12 @@ export default {
     junk () {
       const { error } = null
       return true;
+    },
+    bleh () {
+      return true;
+      let x = y;
     }
+
   }
 };
 </script>
