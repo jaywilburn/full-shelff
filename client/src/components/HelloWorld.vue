@@ -41,6 +41,10 @@ export default {
     junk () {
       const { error } = null
       return true;
+    },
+    junk () {
+      const { error } = null
+      return true;
     }
   }
 };
