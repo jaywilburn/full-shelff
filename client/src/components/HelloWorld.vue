@@ -35,7 +35,13 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String,
+    garbage: String
   },
+  methods: {
+    junk () {
+      return true;
+    }
+  }
 };
 </script>
 
