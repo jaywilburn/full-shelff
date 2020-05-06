@@ -4,6 +4,17 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    junk () {
+      const { error } = null
+      return true;
+    }
+  }
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
