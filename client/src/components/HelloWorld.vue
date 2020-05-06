@@ -49,8 +49,13 @@ export default {
     bleh () {
       return true;
       let x = y;
+    },
+    boop () {
+      if (false) {
+        return false;
+      }
+      return true;
     }
-
   }
 };
 </script>
