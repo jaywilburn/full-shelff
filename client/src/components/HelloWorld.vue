@@ -39,6 +39,7 @@ export default {
   },
   methods: {
     junk () {
+      const { error } = null
       return true;
     }
   }
